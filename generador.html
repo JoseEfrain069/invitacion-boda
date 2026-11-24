@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Generador de invitaciones</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="generador">
+  <main class="gen">
+    <header class="section__head">
+      <p class="eyebrow">Herramienta para los novios</p>
+      <h1 class="section__title">Invitaciones personalizadas</h1>
+      <p class="section__lead">Escribe el nombre de cada invitado y cuántos lugares tiene reservados. Obtendrás un enlace único, listo para enviar por WhatsApp.</p>
+    </header>
+
+    <form class="tarjeta" id="gen-form" novalidate>
+      <div class="field">
+        <label class="field__label" for="gen-nombre">Nombre del invitado o familia</label>
+        <input id="gen-nombre" name="nombre" type="text" placeholder="Ej. Familia Pérez" autocomplete="off">
+        <p class="field__error" id="gen-error" hidden>Escribe un nombre.</p>
+      </div>
+      <div class="field">
+        <label class="field__label" for="gen-pases">Lugares reservados</label>
+        <input id="gen-pases" name="pases" type="number" min="1" max="20" value="2">
+      </div>
+
+      <details class="gen__avanzado">
+        <summary>Dirección de la invitación</summary>
+        <div class="field">
+          <label class="field__label" for="gen-base">Enlace base</label>
+          <input id="gen-base" name="base" type="url">
+          <p class="field__nota">Cuando publiques la página (GitHub Pages, Netlify…), pega aquí su dirección.</p>
+        </div>
+      </details>
+
+      <p class="gen__aviso" id="gen-aviso" hidden>
+        Estás usando una dirección local: estos enlaces solo funcionan en tu computadora (o en tu red Wi-Fi).
+        Para enviárselos a tus invitados, primero publica la página y cambia el enlace base.
+      </p>
+
+      <button class="btn btn--oro btn--bloque" type="submit">Generar enlace</button>
+    </form>
+
+    <section class="tarjeta" id="gen-resultado" hidden aria-live="polite">
+      <div class="field">
+        <label class="field__label" for="gen-link">Enlace personalizado</label>
+        <input id="gen-link" type="text" readonly>
+      </div>
+      <div class="field">
+        <label class="field__label" for="gen-mensaje">Mensaje (puedes editarlo)</label>
+        <textarea id="gen-mensaje" rows="6"></textarea>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn--linea" type="button" id="gen-copiar">Copiar enlace</button>
+        <a class="btn btn--oro" id="gen-whatsapp" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        <a class="btn btn--fantasma" id="gen-ver" href="#" target="_blank" rel="noopener">Vista previa</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/generador.js"></script>
+</body>
+</html>

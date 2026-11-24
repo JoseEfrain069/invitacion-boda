@@ -1,0 +1,12 @@
+{
+  "name": "invitacion-boda",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Invitación de boda dinámica (HTML, CSS y JavaScript) con servidor local en Node.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

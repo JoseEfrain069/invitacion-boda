@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valeria &amp; Santiago · Nuestra boda</title>
+  <meta name="description" content="¡Nos casamos y queremos celebrarlo contigo! Abre tu invitación y confirma tu asistencia.">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, Facebook…). Edita estos textos. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Valeria &amp; Santiago · ¡Nos casamos!">
+  <meta property="og:description" content="Sábado 13 de marzo de 2027. Abre tu invitación y confirma tu asistencia.">
+  <!-- <meta property="og:image" content="https://tu-sitio.com/assets/portada.jpg"> -->
+  <meta name="theme-color" content="#16302a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>document.documentElement.classList.add("js", "is-locked");</script>
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Íconos reutilizables: <svg class="icon"><use href="#i-nombre"></use></svg> -->
+  <svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="ornament" viewBox="0 0 200 24">
+      <path d="M2 12h72M126 12h72" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="M100 3c5 5 5 13 0 18-5-5-5-13 0-18z" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="M84 12c4-4 8-4 12 0-4 4-8 4-12 0zM104 12c4-4 8-4 12 0-4 4-8 4-12 0z" fill="none" stroke="currentColor" stroke-width="1"/>
+      <circle cx="79" cy="12" r="1.8" fill="currentColor"/>
+      <circle cx="121" cy="12" r="1.8" fill="currentColor"/>
+    </symbol>
+    <symbol id="rama" viewBox="0 0 200 200">
+      <path d="M10 190C60 150 110 110 190 20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <g fill="currentColor">
+        <ellipse cx="41" cy="153" rx="13" ry="5" transform="rotate(-87 41 153)"/>
+        <ellipse cx="53" cy="166" rx="13" ry="5" transform="rotate(3 53 166)"/>
+        <ellipse cx="73" cy="126" rx="13" ry="5" transform="rotate(-87 73 126)"/>
+        <ellipse cx="85" cy="139" rx="13" ry="5" transform="rotate(3 85 139)"/>
+        <ellipse cx="107" cy="94" rx="12" ry="4.5" transform="rotate(-87 107 94)"/>
+        <ellipse cx="119" cy="107" rx="12" ry="4.5" transform="rotate(3 119 107)"/>
+        <ellipse cx="146" cy="55" rx="11" ry="4" transform="rotate(-87 146 55)"/>
+        <ellipse cx="158" cy="68" rx="11" ry="4" transform="rotate(3 158 68)"/>
+        <ellipse cx="185" cy="25" rx="10" ry="4" transform="rotate(-45 185 25)"/>
+        <circle cx="62" cy="158" r="2.5"/>
+        <circle cx="128" cy="88" r="2.5"/>
+      </g>
+    </symbol>
+    <symbol id="i-iglesia" viewBox="0 0 24 24"><path d="M12 2v4M10 4h4"/><path d="M6 22V12l6-5 6 5v10"/><path d="M10 22v-4a2 2 0 0 1 4 0v4"/><path d="M3 22h18"/></symbol>
+    <symbol id="i-anillos" viewBox="0 0 24 24"><circle cx="9" cy="15" r="5.5"/><circle cx="15" cy="15" r="5.5"/><path d="M10 4.5 12 2.5l2 2-2 2.5z"/></symbol>
+    <symbol id="i-copa" viewBox="0 0 24 24"><path d="M8 2h8l.5 6a4.5 4.5 0 0 1-9 0z"/><path d="M12 12.5V21M8.5 21h7M7.8 6h8.4"/></symbol>
+    <symbol id="i-cena" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></symbol>
+    <symbol id="i-pastel" viewBox="0 0 24 24"><path d="M4 21v-8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8"/><path d="M4 16.5c1.3 1 2.7 1 4 0s2.7-1 4 0 2.7 1 4 0 2.7-1 4 0"/><path d="M2 21h20M12 12V8"/><path d="M12 5.5c.9-.9.9-2 0-3-.9 1-.9 2.1 0 3z"/></symbol>
+    <symbol id="i-musica" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+    <symbol id="i-camara" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+    <symbol id="i-luna" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z"/><path d="M17 3v3M15.5 4.5h3"/></symbol>
+    <symbol id="i-corazon" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-calendario" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-regalo" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13"/><path d="M12 8C10.5 5 7 4 7 6.5S10 8 12 8zm0 0c1.5-3 5-4 5-1.5S14 8 12 8z"/></symbol>
+    <symbol id="i-sobre" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-banco" viewBox="0 0 24 24"><path d="M3 10h18L12 4z"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18"/></symbol>
+    <symbol id="i-tienda" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+    <symbol id="i-copiar" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
+    <symbol id="i-enviar" viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></symbol>
+    <symbol id="i-traje" viewBox="0 0 24 24"><path d="M8 3h8l4 3v15H4V6z"/><path d="M8 3l4 7 4-7"/><path d="M11.2 3h1.6l-.3 2 .7 3.5-1.2 1.5-1.2-1.5.7-3.5z"/><path d="M12 10v11"/></symbol>
+    <symbol id="i-vestido" viewBox="0 0 24 24"><path d="M9 2l1 4M15 2l-1 4M10 6q2 2 4 0l1 5 4 10H5l4-10zM9 11h6"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <!-- =================== SOBRE DE BIENVENIDA =================== -->
+  <div class="intro" id="intro">
+    <p class="intro__para" id="intro-para">Tienes una invitación especial</p>
+    <div class="intro__escena">
+      <button class="sobre" id="sobre" type="button" aria-label="Abrir la invitación">
+        <span class="sobre__fondo"></span>
+        <span class="sobre__carta">
+          <span class="sobre__eyebrow">¡Nos casamos!</span>
+          <span class="sobre__nombres" data-bind="pareja">Valeria &amp; Santiago</span>
+          <span class="sobre__fecha" data-bind="fechaCorta"></span>
+        </span>
+        <span class="sobre__bolsillo"></span>
+        <span class="sobre__solapa"></span>
+        <span class="sobre__sello" data-bind="iniciales">V&amp;S</span>
+      </button>
+    </div>
+    <p class="intro__hint">Toca el sobre para abrir</p>
+  </div>
+
+  <!-- =================== PORTADA =================== -->
+  <header class="hero" id="inicio">
+    <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero__arco" aria-hidden="true"></div>
+    <div class="hero__contenido">
+      <p class="eyebrow" style="--i:0">Nos casamos</p>
+      <h1 class="hero__nombres" style="--i:1">
+        <span class="dorado" data-bind="novia">Valeria</span>
+        <span class="hero__amp">&amp;</span>
+        <span class="dorado" data-bind="novio">Santiago</span>
+      </h1>
+      <div class="hero__fecha" style="--i:2">
+        <span class="hero__fecha-lado" data-bind="diaSemana"></span>
+        <span class="hero__fecha-dia" data-bind="dia"></span>
+        <span class="hero__fecha-lado" data-bind="mes"></span>
+      </div>
+      <p class="hero__anio" style="--i:3" data-bind="anio"></p>
+      <p class="hero__lema" style="--i:4">y queremos celebrarlo contigo</p>
+    </div>
+    <a class="hero__scroll" href="#cuenta">Desliza</a>
+  </header>
+
+  <main>
+    <!-- =================== CUENTA REGRESIVA =================== -->
+    <section class="section" id="cuenta">
+      <svg class="deco deco--tl" aria-hidden="true"><use href="#rama"></use></svg>
+      <svg class="deco deco--br" aria-hidden="true"><use href="#rama"></use></svg>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Guarda la fecha</p>
+          <h2 class="section__title">Falta muy poco</h2>
+          <svg class="ornament" aria-hidden="true"><use href="#ornament"></use></svg>
+        </header>
+
+        <div class="cuenta reveal" id="cuenta-grid">
+          <div class="cuenta__item"><span class="cuenta__num" data-unidad="dias">00</span><span class="cuenta__label">Días</span></div>
+          <div class="cuenta__item"><span class="cuenta__num" data-unidad="horas">00</span><span class="cuenta__label">Horas</span></div>
+          <div class="cuenta__item"><span class="cuenta__num" data-unidad="minutos">00</span><span class="cuenta__label">Minutos</span></div>
+          <div class="cuenta__item"><span class="cuenta__num" data-unidad="segundos">00</span><span class="cuenta__label">Segundos</span></div>
+        </div>
+        <p class="cuenta__fin" id="cuenta-fin" hidden></p>
+
+        <p class="cuenta__fecha reveal"><span data-bind="fechaLarga"></span> · <span data-bind="hora"></span></p>
+
+        <div class="btn-row reveal">
+          <a class="btn btn--oro" id="cal-google" href="#" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendario"></use></svg> Google Calendar
+          </a>
+          <button class="btn btn--linea" id="cal-ics" type="button">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendario"></use></svg> Apple / Outlook
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== INVITACIÓN =================== -->
+    <section class="section section--papel" id="invitacion">
+      <div class="container angosto invitacion">
+        <p class="eyebrow reveal">Con la bendición de Dios y el amor de nuestros padres</p>
+
+        <div class="padres reveal" id="padres">
+          <div class="padres__col">
+            <h3 class="padres__titulo">Padres de la novia</h3>
+            <p class="padres__nombres" id="padres-novia"></p>
+          </div>
+          <span class="padres__sep" aria-hidden="true"></span>
+          <div class="padres__col">
+            <h3 class="padres__titulo">Padres del novio</h3>
+            <p class="padres__nombres" id="padres-novio"></p>
+          </div>
+        </div>
+
+        <p class="invitacion__texto reveal">tenemos el honor de invitarte a celebrar nuestra unión en matrimonio</p>
+        <blockquote class="frase reveal" data-bind="frase" data-opcional></blockquote>
+
+        <!-- Pase personalizado: aparece cuando el enlace incluye ?invitado=...&pases=... -->
+        <div class="pase reveal" id="pase" hidden>
+          <div class="pase__principal">
+            <p class="eyebrow">Pase de honor</p>
+            <p class="pase__nombre" id="pase-nombre"></p>
+            <p class="pase__texto" id="pase-texto">Esta invitación es especialmente para ti</p>
+          </div>
+          <div class="pase__talon" id="pase-talon" hidden>
+            <span class="pase__num" id="pase-num">2</span>
+            <span class="pase__label" id="pase-label">lugares</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== HISTORIA =================== -->
+    <section class="section" id="historia">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Cómo empezó todo</p>
+          <h2 class="section__title">Nuestra historia</h2>
+          <svg class="ornament" aria-hidden="true"><use href="#ornament"></use></svg>
+        </header>
+        <ol class="linea" id="historia-lista"></ol>
+      </div>
+    </section>
+
+    <!-- =================== GALERÍA (opcional) =================== -->
+    <section class="section section--papel" id="galeria">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Momentos</p>
+          <h2 class="section__title">Nuestra galería</h2>
+          <svg class="ornament" aria-hidden="true"><use href="#ornament"></use></svg>
+        </header>
+        <div class="galeria" id="galeria-lista"></div>
+      </div>
+    </section>
+
+    <!-- =================== CEREMONIA Y RECEPCIÓN =================== -->
+    <section class="section section--oscura" id="evento">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">El gran día</p>
+          <h2 class="section__title">¿Dónde y cuándo?</h2>
+          <svg class="ornament" aria-hidden="true"><use href="#ornament"></use></svg>
+        </header>
+        <div class="eventos" id="eventos-lista"></div>
+      </div>
+    </section>
+
+    <!-- =================== ITINERARIO =================== -->
+    <section class="section" id="itinerario">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Programa</p>
+          <h2 class="section__title">Itinerario</h2>
+          <svg class="ornament" aria-hidden="true"><use href="#ornament"></use></svg>
+        </header>
+        <ol class="itinerario dibujar" id="itinerario-lista"></ol>
+      </div>
+    </section>
+
+    <!-- =================== VESTIMENTA =================== -->
+    <section class="section section--papel" id="vestimenta">
+      <svg class="deco deco--tr" aria-hidden="true"><use href="#rama"></use></svg>
+      <svg class="deco deco--bl" aria-hidden="true"><use href="#rama"></use></svg>
+      <div class="container angosto vestimenta">
+        <header class="section__head reveal">
+          <p class="eyebrow">Código de vestimenta</p>
+          <div class="vestimenta__iconos" aria-hidden="true">
+            <svg class="icon"><use href="#i-traje"></use></svg>
+            <svg class="icon"><use href="#i-vestido"></use></svg>
+          </div>
+          <h2 class="section__title" id="vestimenta-tipo">Formal</h2>
+        </header>
+        <p class="vestimenta__nota reveal" id="vestimenta-nota"></p>
+        <ul class="muestras dibujar" id="vestimenta-colores" aria-label="Colores sugeridos"></ul>
+      </div>
+    </section>
+
+    <!-- =================== REGALOS =================== -->
+    <section class="section" id="regalos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Mesa de regalos</p>
+          <h2 class="section__title">Un detalle</h2>
+          <svg class="ornament" aria-hidden="true"><use href="#ornament"></use></svg>
+          <p class="section__lead" id="regalos-mensaje"></p>
+        </header>
+        <div class="regalos" id="regalos-lista"></div>
+      </div>
+    </section>
+
+    <!-- =================== CONFIRMACIÓN =================== -->
+    <section class="section section--oscura" id="confirmar">
+      <div class="container angosto">
+        <header class="section__head reveal">
+          <p class="eyebrow">¿Nos acompañas?</p>
+          <h2 class="section__title">Confirma tu asistencia</h2>
+          <svg class="ornament" aria-hidden="true"><use href="#ornament"></use></svg>
+          <p class="section__lead" id="rsvp-limite">Por favor confírmanos antes del <strong data-bind="fechaLimite"></strong>.</p>
+        </header>
+
+        <div class="tarjeta rsvp reveal">
+          <form id="rsvp-form" novalidate>
+            <div class="field">
+              <label class="field__label" for="rsvp-nombre">Nombre completo</label>
+              <input id="rsvp-nombre" name="nombre" type="text" autocomplete="name" required placeholder="Escribe tu nombre">
+              <p class="field__error" id="rsvp-error-nombre" hidden>Por favor escribe tu nombre.</p>
+            </div>
+
+            <fieldset class="field">
+              <legend class="field__label">¿Nos acompañarás?</legend>
+              <div class="opciones">
+                <input type="radio" id="rsvp-si" name="asistencia" value="si">
+                <label for="rsvp-si">¡Sí, ahí estaré!</label>
+                <input type="radio" id="rsvp-no" name="asistencia" value="no">
+                <label for="rsvp-no">No podré asistir</label>
+              </div>
+              <p class="field__error" id="rsvp-error-asistencia" hidden>Elige una opción.</p>
+            </fieldset>
+
+            <div class="field" id="rsvp-cantidad-grupo" hidden>
+              <label class="field__label" for="rsvp-cantidad">Número de asistentes</label>
+              <select id="rsvp-cantidad" name="cantidad"></select>
+              <p class="field__nota" id="rsvp-cantidad-nota"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="rsvp-mensaje">Mensaje para los novios <span class="field__opcional">(opcional)</span></label>
+              <textarea id="rsvp-mensaje" name="mensaje" rows="3" placeholder="Alergias, restricciones alimentarias o unas palabras para nosotros"></textarea>
+            </div>
+
+            <button class="btn btn--oro btn--bloque" type="submit">
+              <svg class="icon" aria-hidden="true"><use href="#i-enviar"></use></svg> Enviar confirmación
+            </button>
+            <p class="field__nota rsvp__nota">Se abrirá WhatsApp con tu respuesta lista para enviar.</p>
+          </form>
+
+          <div class="rsvp__gracias" id="rsvp-gracias" hidden aria-live="polite">
+            <svg class="icon rsvp__corazon" aria-hidden="true"><use href="#i-corazon"></use></svg>
+            <h3 class="rsvp__titulo" id="rsvp-gracias-titulo">¡Gracias!</h3>
+            <p id="rsvp-gracias-texto"></p>
+            <div class="btn-row">
+              <a class="btn btn--oro" id="rsvp-reenviar" href="#" target="_blank" rel="noopener">Abrir WhatsApp de nuevo</a>
+              <button class="btn btn--fantasma" id="rsvp-editar" type="button">Cambiar respuesta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================== PIE =================== -->
+  <footer class="pie">
+    <svg class="ornament" aria-hidden="true"><use href="#ornament"></use></svg>
+    <p class="pie__nombres dorado" data-bind="pareja">Valeria &amp; Santiago</p>
+    <p class="pie__fecha" data-bind="fechaCorta"></p>
+    <div class="pie__hashtag" id="pie-hashtag">
+      <p>Comparte tus fotos con nosotros</p>
+      <button class="hashtag" type="button" id="hashtag-btn">
+        <svg class="icon" aria-hidden="true"><use href="#i-camara"></use></svg>
+        <span data-bind="hashtag"></span>
+      </button>
+    </div>
+    <p class="pie__gracias">Gracias por ser parte de nuestra historia</p>
+  </footer>
+
+  <!-- Controles flotantes -->
+  <button class="musica" id="btn-musica" type="button" aria-label="Reproducir música" aria-pressed="false" hidden>
+    <svg class="icon musica__nota" aria-hidden="true"><use href="#i-musica"></use></svg>
+    <span class="musica__barras" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+  </button>
+  <audio id="audio" loop preload="none"></audio>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+    <img id="lightbox-img" alt="">
+    <button class="lightbox__cerrar" type="button" aria-label="Cerrar">
+      <svg class="icon" aria-hidden="true"><use href="#i-cerrar"></use></svg>
+    </button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
